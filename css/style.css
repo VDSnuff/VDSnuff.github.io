@@ -1,0 +1,181 @@
+    /* My styles */
+    
+    html {
+        overflow-x: hidden;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    body {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+    }
+    
+    h1 {
+        font-weight: 300;
+    }
+    
+    h1 span {
+        font-weight: 700;
+    }
+    
+    h5 {
+        padding-top: 0;
+        margin-top: 0;
+    }
+    
+    .jumbotron p {
+        color: #ffffff;
+        font-size: 21px;
+        font-weight: 200;
+        margin-bottom: 25px;
+        margin-top: 35px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
+    .mybtn {
+        border-radius: 0px;
+        border: none;
+        background-color: #1bbc9b;
+        color: #ffffff;
+        margin-right: 1px;
+    }
+    
+    .mybtnPortf {
+        margin-top: 4px;
+    }
+    
+    .btn {
+        padding: 8px 12px;
+    }
+    
+    .mybtn a {
+        text-decoration: none;
+    }
+    
+    #mybtnSubmit {
+        margin-right: 0;
+    }
+    
+    #jumb {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 150px;
+        ;
+    }
+    
+    button a {
+        color: #ffffff;
+    }
+    
+    .thumbnail img {
+        margin-bottom: 20px;
+    }
+    
+    .circlemenu {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-left: 0;
+    }
+    
+    .circlemenu img {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .footerfon {
+        margin: 0 0 0;
+        padding-left: 40px;
+        padding-top: 40px;
+        padding-right: 40px;
+        padding-bottom: 5px;
+        background-color: #2d3e50;
+        color: #ffffff;
+    }
+    
+    .warpCont {
+        background-color: #ecf0f1;
+        margin-top: 0;
+        padding-top: 25px;
+    }
+    
+    .contact {
+        width: 100%;
+        background: #ecf0f1;
+    }
+    
+    .contact h5 {
+        margin-top: 0px;
+    }
+    
+    .cont {
+        margin: 0 0 16px;
+    }
+    
+    .about {
+        background: #16a086;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        color: #ffffff;
+    }
+    
+    p {
+        margin: 0 0 40px;
+    }
+    
+    p span {
+        font-size: 18px;
+    }
+    
+    .box {
+        margin: 0 0 10px;
+        color: #555555;
+        font-style: italic;
+    }
+    
+    .warp {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    /* ---------------------*/
+    
+    .navbar {
+        margin-bottom: 0;
+        background-color: #ffffff;
+        z-index: 9999;
+        border: 0;
+        font-size: 14px !important;
+        line-height: 1.42857143 !important;
+        letter-spacing: 1px;
+        font-weight: 400;
+        border-radius: 0;
+    }
+    
+    .navbar li a,
+    .navbar .navbar-brand {
+        color: black;
+    }
+    
+    .navbar-nav li a:hover,
+    .navbar-nav li.active a {
+        color: #ffffff !important;
+        background-color: #1bbc9b !important;
+    }
+    
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+        color: #ffffff;
+    }
+    
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        background-color: #ffffff;
+        color: aliceblue !important;
+    }

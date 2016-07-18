@@ -1,0 +1,80 @@
+/* Redefined bootstrap styles */
+
+.container-fluid {
+    padding-left: 0px;
+    margin-right: 20px;
+    margin-top: 25px;
+    margin-left: 41px;
+    padding-bottom: 22px;
+}
+
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #e7e7e7;
+    border-radius: 0px;
+    border: 0px;
+}
+
+.jumbotron {
+    background-image: url(../img/jumbotron.jpg);
+    color: inherit;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.jumbotron .h1,
+.jumbotron h1 {
+    color: #ffffff;
+}
+
+.thumbnail {
+    background-color: #fff;
+    border: 0px;
+    border-radius: 0px;
+    display: block;
+    line-height: 1.42857;
+    padding: 0px;
+    transition: border 0.2s ease-in-out 0s;
+    width: 220px;
+    height: 400px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: black;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+thumbnail {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.textbox {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+}
+
+.form-control {
+    background-color: #fff;
+    background-image: none;
+    border: 2px solid #bec3c7;
+    border-radius: 0px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555;
+    display: block;
+    font-size: 14px;
+    height: 34px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+}
+
+
+/*.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+  background-color: transparent;
+}*/
