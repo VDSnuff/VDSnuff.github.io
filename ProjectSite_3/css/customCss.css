@@ -1,0 +1,47 @@
+h1 {
+    color: #FFFFFF;
+    padding: 50px;
+    font-size: 55px;
+}
+.myBg {
+    background-color: #1D1F20;
+    width: 100%;
+    text-align: center;
+    margin-top: -20px;
+}
+footer {
+    background-color: #343436;
+    width: 100%;
+    margin-top: 5%;
+    padding-top: 2%;
+    vertical-align: middle;
+}
+img {
+    margin: 1%;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+footer p {
+    color: #fff;
+    margin-top: 2%;
+}
+.myP {
+    color: #343436;
+    margin: 0;
+    padding-top: 20px;
+}
+.blackDiv {
+    height: 20px;
+    background-color: #343436;
+    margin-top: -40px;
+    padding: 0;
+}
+div p {
+    text-indent: 25px;
+}
