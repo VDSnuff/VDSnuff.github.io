@@ -7,9 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>VDSnuff Portfolio</title>
-
+    <!-- Fontawesone -->
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+    <!-- My CSS -->
+    <link href="css/mycss.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,37 +23,104 @@
 </head>
 
 <body>
-    <nav>
-
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">&lt;VD&gt;</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">About<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li><a href="#">Professional experience</a>
+                    </li>
+                    <li><a href="#">Computer skills</a>
+                    </li>
+                    <li><a href="#">Education</a>
+                    </li>
+                    <li><a href="#">Computer skills</a>
+                    </li>
+                    <li><a href="#">Interests and hobbies</a>
+                    </li>
+                    <li><a href="#">Personal Projects</a>
+                    </li>
+                    <li><a href="#">I'm recommend</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
     </nav>
+    <!-- End -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-offset-2 col-md-4 col-lg-offset-2 col-lg-4">
+                <section class="secLeft">
+                    <h1>Viacheslav Dovnich</h1>
+                    <h3>Ahuitelnyu Developer!</h3>
+                    <img src="photo/vd.jpg" alt="My Photo" class="myPhoto img-thumbnail">
+                    <div class="contactInform">
+                        <ul>
+                            <li><i class="fa fa-home" aria-hidden="true"></i>Current address: Bydgoszcz 85-120</li>
+                            <li><i class="fa fa-mobile" aria-hidden="true"></i>Mobile phones: +48 883 089 252</li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i>Emails: v.dovnich@gmail.com</li>
+                            <li><i class="fa fa-skype" aria-hidden="true"></i>Skype: v.dovnich</li>
+                            <li><i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook: www.facebook.com/v.dovnich</li>
 
-    <section>
-        <h1>For What?</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius rem error, soluta obcaecati placeat quis commodi. Possimus necessitatibus amet error minus maiores harum vero iusto veritatis, nobis.</p>
-    </section>
+                            <li><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkId:</li>
+                            <li><i class="fa fa-github" aria-hidden="true"></i>GitHub</li>
+                            <li><i class="fa fa-vk" aria-hidden="true"></i>vk</li>
+                        </ul>
 
-    <section>    
-        <h2>Bio/About.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nobis ut placeat tenetur explicabo atque consectetur accusantium hic officiis vel eum veniam reiciendis nemo repellendus fugiat amet in dolores exercitationem nostrum deserunt, cupiditate ad? Quos debitis error voluptatibus optio, ad eveniet velit sint quasi consectetur culpa, sed totam accusamus illum corporis quae ut.</p>
-        
-        <h2>Professional experience.</h2>
-        p
-        
-        <h2>Education - University - Self</h2>
-        <h2>Computer skills</h2>
-        <h2>Interests and hobbies</h2>
-        <h2>Personal Projects</h2>
-        <h2>I'm recommend</h2>
-        <h2>Certificates</h2>
-        <h2>Summary</h2>
-    </section>
-
-
+                    </div>
+                </section>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <section class="secRight">
+                    <h2>Bio/About</h2>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nobis ut placeat tenetur explicabo atque consectetur accusantium hic officiis vel eum veniam reiciendis nemo repellendus fugiat amet in dolores exercitationem nostrum deserunt, cupiditate ad? Quos debitis error voluptatibus optio, ad eveniet velit sint quasi consectetur culpa, sed totam accusamus illum corporis quae ut.</p>
+                    </div>
+                    <h2>Professional experience <i class="fa fa-industry" aria-hidden="true"></i></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt veniam quibusdam fugit dicta nobis nostrum tempora minima enim quam, corporis sint. Earum iste, praesentium fuga dicta quae itaque voluptatem quam, rem adipisci, aspernatur illo molestiae doloribus veniam.</p>
+                    <!-- Education section -->
+                    <h2>Education <i class="fa fa-graduation-cap" aria-hidden="true"></i></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat odio nostrum error necessitatibus, doloremque perferendis eligendi quas perspiciatis consectetur, dolores possimus iusto quidem impedit fuga rerum cum, velit aperiam repellendus ad. Rerum iure aperiam tempora veniam asperiores, a cumque amet.</p>
+                    <h3>University</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi nulla, consequuntur hic minus cumque similique provident natus sit, excepturi recusandae, commodi maxime ipsam tenetur cupiditate.</p>
+                    <h3>Self</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nobis assumenda eligendi repellendus sunt aliquam quo, doloribus vel, in corporis non veniam, ipsum qui deserunt.</p>
+                    <h3>Certificates <i class="fa fa-certificate" aria-hidden="true"></i></h3>
+                    <!-- End -->
+                    <h2>Computer skills <i class="fa fa-laptop" aria-hidden="true"></i> </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam recusandae vel debitis voluptas quis fugit necessitatibus consectetur laudantium nulla adipisci cum, ducimus corporis nemo dolorem ut placeat eaque unde temporibus, corrupti ad consequatur quod? Tenetur, molestias, aperiam, velit necessitatibus ut, quasi voluptate cum vero animi tempora assumenda. Voluptatum, vitae, architecto!</p>
+                    <h2>Interests and hobbies</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quasi accusamus cum pariatur ea! Aliquam nemo eum explicabo, eaque pariatur maiores nam odio sit a ipsam quasi libero adipisci nostrum!</p>
+                    <h2>Personal Projects</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus laudantium est ipsam eligendi esse! Necessitatibus repellendus, nihil ab voluptates aut nesciunt voluptas perferendis totam quia consequuntur iste porro velit molestiae, consectetur enim aperiam, officiis corporis a odio adipisci quae? Quia vitae, earum. Ad possimus est sunt nihil dicta iure rerum quidem! Sunt quo eveniet nesciunt fugit et velit a eos!</p>
+                    <h2>I'm recommend</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, cum suscipit debitis omnis! Necessitatibus deserunt, tempore velit. Quas rem, modi id neque quasi illum cum quae veniam officia accusamus similique veritatis voluptate quidem nisi! In adipisci corporis doloremque blanditiis expedita tempora ex illum maxime voluptate itaque nulla, sint maiores neque, cum nihil quidem, ipsum quo. Voluptate in voluptatem adipisci cum et error ipsum, deleniti sed inventore perferendis, consequuntur enim ad fugit, vel quidem atque aliquam ullam autem!</p>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p><i class="fa fa-cog" aria-hidden="true"></i>Powered by VD</p>
+    </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
 </body>
 
 </html>
