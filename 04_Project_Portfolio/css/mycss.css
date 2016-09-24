@@ -7,7 +7,7 @@ body {
 }
 h1 {
     margin-top: 0;
-    font-size: 22pt;
+    font-size: 2.1em;
 }
 .myBrand {
     padding-top: 15px;
@@ -26,7 +26,6 @@ h1 {
 }
 hr {
     border-color: #35879A;
-    size: 5px;
 }
 .secLeft {
     padding-top: 10px;
@@ -42,32 +41,22 @@ hr {
     padding-left: 2%;
     padding-right: 2%;
 }
-li {
-}
-li h3 i {
+li h2 {
     color: #235A67;
 }
-li h3 {
-    color: #235A67;
-}
-
 li:nth-child(even) {
     padding-top: 5px;
     padding-bottom: 30px;
     padding-left: 15px;
 }
-
 li i {
-  font-size: 36px;
+    font-size: 36px;
 }
-
-
-
-
 .contactInform ul {
     text-align: left;
     list-style: none;
     padding: 0;
+    padding-left: 5%;
 }
 i {} .secRight {} .redLine {
     background-color: #94D7E6;
@@ -76,13 +65,16 @@ i {} .secRight {} .redLine {
     height: 35px;
 }
 .mSquareR {
+    text-align: center;
+    font-size: 1.5em;
     margin: 0;
     padding: 0;
     display: inline-block;
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     background-color: #35879A;
     float: right;
+    padding-top: 10px;
 }
 .mSquareL {
     margin: 0;
@@ -92,6 +84,36 @@ i {} .secRight {} .redLine {
     height: 35px;
     background-color: #35879A;
 }
+
+h4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.5em;
+    text-align: right;
+    color:#35879A;
+}
+
+h4 i {
+    
+    display: inline-block;
+    padding-right: 25px;
+    padding-left: 25px;
+    color:#35879A;
+}
+
+.fa-paperclip{
+    font-size: 1.2em;
+}
+
+.fa-bomb{
+    font-size: 1.2em;
+}
+
+.fa-certificate
+{
+    font-size: 1.2em;
+}
+
 p {
     background-color: white;
     padding-top: 10px;
@@ -103,33 +125,40 @@ p {
 .downArrow {
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 30px;
     background-color: #94D7E6;
     width: 90%;
     height: 20px;
     text-align: center;
+    opacity: 0.3;
 }
+
+.downArrow:hover{
+    opacity: 1;
+}
+
 h2 {
-    font-size: 18pt;
+    font-size: 1.6em;
 }
 h3 {
-    font-size: 16pt;
+    display: inline-block;
+    font-size: 1.8em;
     color: #FAFAFA;
     margin: 0;
-    padding-left: 10px;
-    display: inline-block;
+    padding-top: 5px;
+    padding-left: 45px;
 }
 i {
     color: #FAFAFA;
 }
-
-.social{
+.social {
     display: inline-block;
     margin: 0;
     font-size: 30px;
     padding: 10px;
 }
-
 footer {
+    display: block;
     text-align: center;
     background-color: #235A67;
     margin-top: 30px;
@@ -137,9 +166,44 @@ footer {
     height: 100px;
 }
 footer p {
+    display: inline-block;
     padding-top: 40px;
+    margin-right: -10px;
     color: white;
     background-color: #235A67;
+}
+#upArrow {
+    position: static;
+    padding-top: 25px;
+    font-size: 2.5em;
+    color: white;
+    display: inline-block;
+    margin-right: -15px;
+    background-color: orange;
+    width: 60px;
+    height: 100%;
+    float: right;
+}
+@media screen and (max-width: 375px) {
+    #upArrow {
+        display: none;
+    }
+}
+@media screen and (min-width: 992px) {
+    #brNone {
+        display: none;
+    }
+    #iNone {
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    #brNone {
+        display: none;
+    }
+    #iNone {
+        display: none;
+    }
 }
 p em {
     color: orange;
