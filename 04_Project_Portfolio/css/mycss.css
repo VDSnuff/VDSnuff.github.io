@@ -84,36 +84,28 @@ i {} .secRight {} .redLine {
     height: 35px;
     background-color: #35879A;
 }
-
 h4 {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 1.5em;
     text-align: right;
-    color:#35879A;
+    color: #35879A;
 }
-
 h4 i {
-    
     display: inline-block;
     padding-right: 25px;
     padding-left: 25px;
-    color:#35879A;
+    color: #35879A;
 }
-
-.fa-paperclip{
+.fa-paperclip {
     font-size: 1.2em;
 }
-
-.fa-bomb{
+.fa-bomb {
     font-size: 1.2em;
 }
-
-.fa-certificate
-{
+.fa-certificate {
     font-size: 1.2em;
 }
-
 p {
     background-color: white;
     padding-top: 10px;
@@ -132,11 +124,9 @@ p {
     text-align: center;
     opacity: 0.3;
 }
-
-.downArrow:hover{
+.downArrow:hover {
     opacity: 1;
 }
-
 h2 {
     font-size: 1.6em;
 }
