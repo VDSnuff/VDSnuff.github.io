@@ -86,10 +86,9 @@ h1 {
     width: 50px;
 }
 .myBrand:hover {
-    opacity: 1;
     box-shadow: 0 0 6px rgba(35, 173, 255, 1);
 }
-.had {
+.topLine {
     margin-bottom: 0;
     padding-bottom: 0;
     width: 100%;
@@ -98,15 +97,32 @@ h1 {
 }
 hr {
     border-color: #35879A;
+    margin-bottom: 10%;
+    opacity: 0.5;
 }
 .secLeft {
     padding-top: 10px;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
     padding-bottom: 2%;
     background-color: #42A8C0;
     color: #FAFAFA;
     text-align: center;
+    margin-bottom: 3%;
+}
+span.glyphicon.glyphicon-save {
+    display: inline-block;
+    font-size: 2em;
+    background-color: #35879A;
+    height: 45px;
+    width: 90%;
+    padding-top: 9px;
+    margin-bottom: 6%;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.glyphicon.glyphicon-save:hover {
+    opacity: 1;
 }
 .greetings {
     text-align: left;
@@ -117,12 +133,55 @@ li h2 {
     color: #235A67;
 }
 li:nth-child(even) {
-    padding-top: 5px;
-    padding-bottom: 30px;
-    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-left: 20px;
 }
 li i {
-    font-size: 36px;
+    padding-right: 10px;
+}
+.lang {
+    margin: 2%;
+    display: inline-block;
+    color: #35879A;
+    width: 120px;
+    font-weight: bold;
+    margin-bottom: 6%;
+    font-size: 1.2em;
+}
+.contactInf span {
+    padding: 0;
+    padding-right: 10px;
+    font-size: 25px;
+}
+.contactInf {
+    display: block;
+    width: 100%;
+}
+div.contactInf h2 {
+    font-size: 1.3em;
+    text-align: left;
+    color: #235A67;
+}
+.contactInform {
+    padding-left: 5%;
+}
+.contactInform h2 {
+    color: #235A67;
+}
+.hiddenH {
+    display: none;
+}
+.down {
+    margin-top: 8%;
+    display: block;
+}
+div.contactInf p {
+    width: 100%;
+    text-align: left;
+    background-color: #42A8C0;
+    padding-bottom: 2%;
+    padding-top: 0;
+    text-indent: -5px;
 }
 .contactInform ul {
     text-align: left;
@@ -130,7 +189,11 @@ li i {
     padding: 0;
     padding-left: 5%;
 }
-i {} .secRight {} .redLine {
+ul + h2 {
+    margin-top: 15%;
+    color: #235A67;
+}
+.redLine {
     background-color: #94D7E6;
     padding: 0;
     margin: 0;
@@ -155,6 +218,9 @@ i {} .secRight {} .redLine {
     width: 35px;
     height: 35px;
     background-color: #35879A;
+}
+h5 {
+    font-size: 1.2em;
 }
 h4 {
     padding-top: 20px;
@@ -215,7 +281,8 @@ i {
 }
 .social {
     display: inline-block;
-    margin: 0;
+    margin: 1%;
+    margin-bottom: 6%;
     font-size: 30px;
     padding: 10px;
 }
@@ -268,6 +335,35 @@ footer p {
     }
     #iNone {
         display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    .contactInf {
+        display: inline-block;
+        width: 40%;
+        margin: 2%;
+    }
+    .down {
+        display: block;
+        width: 100%;
+        font-size: 1em;
+    }
+    .hiddenH {
+        display: block;
+    }
+}
+@media screen and (max-width: 561px) {
+    .iconSize {
+        display: none;
+        width: 40%;
+        margin: 2%;
+    }
+}
+@media screen and (max-width: 420px) {
+    .contactInf {
+        display: block;
+        width: 100%;
+        margin: 2%;
     }
 }
 p em {
