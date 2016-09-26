@@ -2,8 +2,10 @@ body {
     /* Top nav bar fixed */
     /*End*/
     background-color: #F5F5F5;
-    min-width: 295px;
+    min-width: 300px;
     padding-top: 75px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: normal;
 }
 .myNav {
     background-color: #FAFAFA;
@@ -364,6 +366,32 @@ footer p {
         display: block;
         width: 100%;
         margin: 2%;
+    }
+}
+@media screen and (max-width: 420px) {
+    .mSquareL h3 {
+        font-size: 1.5em;
+    }
+    article h4 {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 370px) {
+    .mSquareL h3 {
+        margin-top: 5px;
+        font-size: 1.2em;
+    }
+    article h4 {
+        font-size: 1.1em;
+    }
+}
+@media screen and (max-width: 325px) {
+    .mSquareL h3 {
+        margin-top: 5px;
+        font-size: 1.1em;
+    }
+    article h4 {
+        font-size: 1em;
     }
 }
 p em {
