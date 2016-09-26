@@ -27,25 +27,24 @@
     <!-- Navigation -->
     <nav class="myNav">
         <div class="">
-            <a href="#" class="myBrand">
+            <a href="#" class="myBrand" onclick="reloadFunction()">
                 <i class="fa fa-chevron-left" aria-hidden="true"></i><i class="fa fa-leaf" aria-hidden="true"></i><i class="fa fa-chevron-right" aria-hidden="true"></i>
             </a>
             <div class="dropdown">
                 <button class="dropbtn"> <i class="fa fa-bars" aria-hidden="true"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="#">About</a>
-                    <a href="#">Professional experience</a>
-                    <a href="#">Computer skills</a>
-                    <a href="#">Education</a>
-                    <a href="#">Computer skills</a>
-                    <a href="#">Interests and hobbies</a>
-                    <a href="#">Personal Projects</a>
-                    <a href="#">I'm recommend</a>
+                    <a class="scroll" id="Ab" href="#About">About</a>
+                    <a class="scroll" id="Prof" href="#Professional">Professional experience</a>
+                    <a class="scroll" id="Edu" href="#Education">Education</a>
+                    <a class="scroll" id="Com" href="#Computer">Computer skills</a>
+                    <a class="scroll" id="Int" href="#Interests">Interests and hobbies</a>
+                    <a class="scroll" id="Per" href="#Personal">Personal Projects</a>
+                    <a class="scroll" id="Rec" href="#Recommend">I'm recommend</a>
                 </div>
             </div>
             <div class="currentPosition">
-                <p><i class="fa fa-angle-right" aria-hidden="true" style="color:orange; font-size:18px;"></i>  <span> About</span>
+                <p><i class="fa fa-angle-right" aria-hidden="true" style="color:orange; font-size:18px;"></i><span> About</span>
                 </p>
             </div>
 
@@ -122,7 +121,7 @@
                     <article>
                         <div class="redLine">
                             <div class="mSquareL">
-                                <h3>About</h3>
+                                <h3 id="About">About</h3>
                             </div>
 
                             <div class="mSquareR">
@@ -130,7 +129,7 @@
                             </div>
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nobis ut placeat tenetur explicabo atque consectetur accusantium hic officiis vel eum veniam reiciendis nemo repellendus fugiat amet in dolores exercitationem nostrum deserunt, cupiditate ad? Quos debitis error voluptatibus optio, ad eveniet velit sint quasi consectetur culpa, sed totam accusamus illum corporis quae ut.</p>
-                        <div class="downArrow"><i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        <div class="downArrow" id="Professional"><i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>
                     </article>
 
@@ -145,7 +144,7 @@
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt veniam quibusdam fugit dicta nobis nostrum tempora minima enim quam, corporis sint. Earum iste, praesentium fuga dicta quae itaque voluptatem quam, rem adipisci, aspernatur illo molestiae doloribus veniam.</p>
 
-                        <div class="downArrow"><i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        <div class="downArrow" id="Education"><i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>
                     </article>
 
@@ -169,18 +168,18 @@
                     </article>
 
                     <article>
-                        <div class="downArrow"><i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        <div class="downArrow" id="Computer"><i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>
                         <div class="redLine">
                             <div class="mSquareL">
-                                <h3>Computer_skills</h3>
+                                <h3 id="Computer">Computer_skills</h3>
                             </div>
                             <div class="mSquareR">
                                 <img src="img/laptop-icon.png" alt="laptop-icon">
                             </div>
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam recusandae vel debitis voluptas quis fugit necessitatibus consectetur laudantium nulla adipisci cum, ducimus corporis nemo dolorem ut placeat eaque unde temporibus, corrupti ad consequatur quod? Tenetur, molestias, aperiam, velit necessitatibus ut, quasi voluptate cum vero animi tempora assumenda. Voluptatum, vitae, architecto!</p>
-                        <div class="downArrow"><i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        <div class="downArrow" id="Interests"><i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>
                     </article>
 
@@ -194,7 +193,7 @@
                             </div>
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quasi accusamus cum pariatur ea! Aliquam nemo eum explicabo, eaque pariatur maiores nam odio sit a ipsam quasi libero adipisci nostrum!</p>
-                        <div class="downArrow"><i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        <div class="downArrow" id="Personal"><i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>
                     </article>
 
@@ -208,7 +207,7 @@
                             </div>
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus laudantium est ipsam eligendi esse! Necessitatibus repellendus, nihil ab voluptates aut nesciunt voluptas perferendis totam quia consequuntur iste porro velit molestiae, consectetur enim aperiam, officiis corporis a odio adipisci quae? Quia vitae, earum. Ad possimus est sunt nihil dicta iure rerum quidem! Sunt quo eveniet nesciunt fugit et velit a eos!</p>
-                        <div class="downArrow"><i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        <div class="downArrow" id="Recommend"><i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </div>
                     </article>
 
@@ -232,13 +231,16 @@
     <footer class="container">
         <p><i class="fa fa-cog" aria-hidden="true"></i> Powered by <em>Viacheslav Dovnich.</em>
         </p>
-        <div id="upArrow"><a href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-        </div>
+        <!--<div id="upArrow"><a class="scroll" href="#About"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+        </div>-->
+        <a id="upArrow" class="scroll" href="#About"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
     </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
