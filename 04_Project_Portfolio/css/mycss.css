@@ -7,7 +7,9 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     font-style: normal;
     color:  #235A67;
+    font-size: 1.5em;
 }
+
 
 article {
     background: white;
@@ -107,7 +109,7 @@ h1 {
 hr {
     border-color: #35879A;
     margin-bottom: 10%;
-    opacity: 0.5;
+    opacity: 0.2;
 }
 .secLeft {
     padding-top: 10px;
@@ -330,12 +332,12 @@ footer p {
 }
 
 article p {
-    line-height: 2.4;
+    line-height: 2;
     letter-spacing: 0.4px;
 }
 
 article ul {
-    line-height: 2.4;
+    line-height: 2;
     letter-spacing: 0.4px;
     margin-left: 5%;
     margin-right: 5%;
@@ -382,6 +384,9 @@ article hr{
         display: none;
     }
 }
+
+
+
 @media screen and (min-width: 992px) {
     #brNone {
         display: none;
@@ -398,6 +403,16 @@ article hr{
         display: none;
     }
 }
+
+@media screen and (max-width: 1199px) {
+    #brNone {
+        display: inline;
+    }
+    #iNone {
+        display: inline;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .contactInf {
         display: inline-block;
