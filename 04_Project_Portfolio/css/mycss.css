@@ -7,7 +7,10 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     font-style: normal;
     color: #235A67;
-    font-size: 1.5em;
+    font-size: 1.6em;
+}
+a {
+    cursor: pointer;
 }
 article {
     background: white;
@@ -26,6 +29,16 @@ article {
 }
 /* Navbar dropdown */
 
+.hiddenBlock {
+    margin: 0;
+    padding: 0;
+    background-color: orange;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    margin: -50px;
+    position: relative;
+}
 .dropbtn {
     background-color: orange;
     height: 50px;
@@ -123,7 +136,7 @@ span.glyphicon.glyphicon-save {
     display: inline-block;
     font-size: 2em;
     background-color: #35879A;
-    height: 45px;
+    height: 50px;
     width: 90%;
     padding-top: 9px;
     margin-bottom: 6%;
@@ -178,7 +191,7 @@ li i {
     width: 120px;
     font-weight: bold;
     margin-bottom: 6%;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 .contactInf span {
     padding: 0;
@@ -219,7 +232,7 @@ div.contactInf p {
     text-align: left;
     list-style: none;
     padding: 0;
-    padding-left: 5%;
+    padding-left: 50%;
 }
 ul + h2 {
     margin-top: 15%;
@@ -254,9 +267,13 @@ ul + h2 {
 h5 {
     font-size: 1.2em;
 }
+.secRight h5 {
+    text-align: center;
+}
 h4 {
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-right: 35px;
     font-size: 1.5em;
     text-align: right;
     color: #35879A;
@@ -303,9 +320,9 @@ h2 {
 h3 {
     display: inline-block;
     font-size: 1.8em;
-    color: #FAFAFA;
+    color: #235A67;
     margin: 0;
-    padding-top: 5px;
+    padding-top: 15px;
     padding-left: 45px;
     word-break: keep-all;
 }
@@ -355,11 +372,18 @@ article p {
     line-height: 2;
     letter-spacing: 0.4px;
 }
+article ul li p {
+    line-height: 1;
+}
 article ul {
     line-height: 2;
     letter-spacing: 0.4px;
     margin-left: 5%;
     margin-right: 5%;
+    list-style-type: none;
+}
+ul ul {
+    list-style-type: disc;
 }
 article hr {
     padding: 0;
@@ -368,6 +392,16 @@ article hr {
     margin-bottom: 2%;
     margin-left: 15%;
     margin-right: 15%;
+}
+figure {
+    margin: 5%;
+}
+figure figcaption {
+    margin-top: 10%;
+}
+.withMarkup {
+    list-style-type: disc;
+    padding-left: 20%;
 }
 #s1 {
     display: inline-block;
@@ -480,6 +514,12 @@ article hr {
 p em {
     color: orange;
 }
+.learn {
+    text-align: center;
+}
+article>p>em {
+    color: #235A67;
+}
 .console {
     color: white;
     -webkit-animation-name: console;
@@ -550,3 +590,8 @@ div.desc {
     display: table;
     clear: both;
 }
+/*Test Animation*/
+
+/*Step 2*/
+
+.dropdown {}
