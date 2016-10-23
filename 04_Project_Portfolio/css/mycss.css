@@ -134,9 +134,9 @@ hr {
 }
 span.glyphicon.glyphicon-save {
     display: inline-block;
-    font-size: 2em;
+    font-size: 1.2em;
     background-color: #35879A;
-    height: 50px;
+    height: 35px;
     width: 90%;
     padding-top: 9px;
     margin-bottom: 6%;
@@ -184,30 +184,24 @@ li h2 {
 li i {
     padding-right: 10px;
 }
-
 div.downArrow > i {
     display: block;
 }
-
-ul ul li:last-child {
-     list-style-type: none;
+ul.skills ul li:last-child {
+    list-style-type: none;
 }
-
-.imgWall{
+.imgWall {
     margin: 3% 3% 3% 3%;
 }
-
-.imgWall img{
+.imgWall img {
     margin: 2%;
     height: 50px;
     width: 50px;
     opacity: 0.8;
 }
-
-.imgWall img:hover{
+.imgWall img:hover {
     opacity: 1;
 }
-
 .lang {
     margin: 2%;
     display: inline-block;
@@ -453,9 +447,32 @@ figure figcaption {
 #upArrow:hover {
     box-shadow: 0 0 6px rgba(35, 173, 255, 1);
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 440px) {
+    footer {
+        text-align: left;
+        padding: 0;
+    }
+    footer p {
+        font-size: 0.8em;
+    }
     #upArrow {
+        text-align: center;
+        width: 40px;
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 375px) {
+    footer {
+        height: 50px;
+    }
+    footer.container p {
         display: none;
+    }
+    #upArrow {
+        width: 100%;
+        margin: 0;
+        font-size: 1.2em;
+        padding: 15px;
     }
 }
 @media screen and (min-width: 992px) {
@@ -520,6 +537,9 @@ figure figcaption {
     }
 }
 @media screen and (max-width: 370px) {
+    body {
+        font-size: 1.3em;
+    }
     .mSquareL h3 {
         margin-top: 5px;
         font-size: 1.2em;
@@ -537,7 +557,6 @@ figure figcaption {
         font-size: 1em;
     }
 }
-
 .learn {
     text-align: center;
 }
@@ -617,5 +636,3 @@ div.desc {
 /*Test Animation*/
 
 /*Step 2*/
-
-.dropdown {}

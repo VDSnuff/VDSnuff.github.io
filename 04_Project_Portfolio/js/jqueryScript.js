@@ -8,11 +8,11 @@ $(document).ready(function($) {
     });
 });
 
-$(document).ready(function() {
-    $(".toggle-trigger").click(function() {
-        $(this).parent().prevAll('.toggle-wrap').first().toggle('slow');
-    });
-});
+//$(document).ready(function() {
+//    $(".toggle-trigger").click(function() {
+//        $(this).parent().prevAll('.toggle-wrap').first().toggle('slow');
+//    });
+//});
 
 /*End Scroll*/
 
@@ -21,30 +21,6 @@ $(document).ready(function() {
 //$(document).ready(function(){
 //    $("#a3").click(function(){
 //        $("#b3").toggle("fast");
-//    });
-//});
-
-//$(document).ready(function(){
-//    $("#a4").click(function(){
-//        $("#b4").toggle("fast");
-//    });
-//});
-//
-//$(document).ready(function(){
-//    $("#a5").click(function(){
-//        $("#b5").toggle("fast");
-//    });
-//});
-//
-//$(document).ready(function(){
-//    $("#a6").click(function(){
-//        $("#b6").toggle("fast");
-//    });
-//});
-//
-//$(document).ready(function(){
-//    $("#a7").click(function(){
-//        $("#b7").toggle("fast");
 //    });
 //});
 /* End */

@@ -20,14 +20,14 @@ function funcUpDownArrow(CurId) {
 /* Current Position in menu */
 var element1 = $("#About").offset().top;
 var element2 = $("#Professional").offset().top;
-var element3 = $("#Education").offset().top;
-var element4 = $("#Computer").offset().top;
+var element3 = $("#Computer").offset().top;
+var element4 = $("#Education").offset().top;
 var element5 = $("#Interests").offset().top;
 var element6 = $("#Personal").offset().top;
 var element7 = $("#Recommend").offset().top;
 $(window).scroll(function() {
     var y = $(window).scrollTop();
-    if (y >= element1 - 70) {
+    if (y >= element1) {
         document.getElementById("s1").style.display = "inline-block";
         document.getElementById("s2").style.display = "none";
     }
