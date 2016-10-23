@@ -1,19 +1,19 @@
 /*My scripts*/
-
-/*Scroll*/
-$(document).ready(function($) {
-    $(".scroll").click(function(event) {
-        event.preventDefault();
-        $('html,body').animate({
-            scrollTop: $(this.hash).offset().top
-        }, 1200);
-    });
-});
-/*End Scroll*/
-
 /* Location reload Method */
 function reloadFunction() {
     location.reload();
+}
+/* End */
+
+/* Up Down Arrow */
+function funcUpDownArrow(CurId) {
+    var x = document.getElementById(CurId);
+
+    if (x.className === "fa fa-chevron-up") {
+        x.className = "fa fa-chevron-down";
+    } else {
+        x.className = "fa fa-chevron-up";
+    }
 }
 /* End */
 

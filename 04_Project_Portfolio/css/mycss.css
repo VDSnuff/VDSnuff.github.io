@@ -2,7 +2,7 @@ body {
     /* Top nav bar fixed */
     /*End*/
     background-color: #F5F5F5;
-    min-width: 320px;
+    min-width: 310px;
     padding-top: 75px;
     font-family: Helvetica, Arial, sans-serif;
     font-style: normal;
@@ -184,6 +184,30 @@ li h2 {
 li i {
     padding-right: 10px;
 }
+
+div.downArrow > i {
+    display: block;
+}
+
+ul ul li:last-child {
+     list-style-type: none;
+}
+
+.imgWall{
+    margin: 3% 3% 3% 3%;
+}
+
+.imgWall img{
+    margin: 2%;
+    height: 50px;
+    width: 50px;
+    opacity: 0.8;
+}
+
+.imgWall img:hover{
+    opacity: 1;
+}
+
 .lang {
     margin: 2%;
     display: inline-block;
@@ -310,6 +334,7 @@ p {
     height: 20px;
     text-align: center;
     opacity: 0.3;
+    cursor: pointer;
 }
 .downArrow:hover {
     opacity: 1;
@@ -323,6 +348,7 @@ h3 {
     color: #235A67;
     margin: 0;
     padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 45px;
     word-break: keep-all;
 }
@@ -373,7 +399,7 @@ article p {
     letter-spacing: 0.4px;
 }
 article ul li p {
-    line-height: 1;
+    line-height: 0.5;
 }
 article ul {
     line-height: 2;
@@ -511,9 +537,7 @@ figure figcaption {
         font-size: 1em;
     }
 }
-p em {
-    color: orange;
-}
+
 .learn {
     text-align: center;
 }
