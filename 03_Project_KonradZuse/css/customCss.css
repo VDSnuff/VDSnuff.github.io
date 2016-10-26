@@ -54,6 +54,10 @@ div p {
     padding-bottom: 40px;
 }
 
+.half{
+    width: 55%;
+}
+
 . glyphicon-chevron-left, glyphicon-chevron-right{
     color: white;
 }
