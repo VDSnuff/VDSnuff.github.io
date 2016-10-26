@@ -1,21 +1,12 @@
-/*My scripts*/
-/* Location reload Method */
-function reloadFunction() {
-    location.reload();
-}
-/* End */
-
-/* Up Down Arrow */
-function funcUpDownArrow(CurId) {
-    var x = document.getElementById(CurId);
-
-    if (x.className === "fa fa-chevron-up") {
-        x.className = "fa fa-chevron-down";
-    } else {
-        x.className = "fa fa-chevron-up";
-    }
-}
-/* End */
+/*Scroll*/
+$(document).ready(function($) {
+    $(".scroll").click(function(event) {
+        event.preventDefault();
+        $("html,body").animate({
+            scrollTop: $(this.hash).offset().top
+        }, 1200);
+    });
+});
 
 /* Current Position in menu */
 var element1 = $("#About").offset().top;
@@ -62,3 +53,19 @@ $(window).scroll(function() {
     }
 });
 /* End Current Position */
+//$(document).ready(function() {
+//    $(".toggle-trigger").click(function() {
+//        $(this).parent().prevAll('.toggle-wrap').first().toggle('slow');
+//    });
+//});
+
+/*End Scroll*/
+
+/*Show Hide Func*/
+//
+//$(document).ready(function(){
+//    $("#a3").click(function(){
+//        $("#b3").toggle("fast");
+//    });
+//});
+/* End */
