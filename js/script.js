@@ -1,9 +1,4 @@
 /*My scripts*/
-/* Location reload Method */
-function reloadFunction() {
-    location.reload();
-}
-/* End */
 
 /* Up Down Arrow */
 function funcUpDownArrow(CurId) {
