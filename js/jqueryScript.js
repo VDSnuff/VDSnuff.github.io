@@ -7,8 +7,8 @@ $(document).ready(function($) {
         }, 1200);
     });
 });
-
 /* Current Position in menu */
+$(document).ready(function() {
 var element1 = $("#About").offset().top;
 var element2 = $("#Professional").offset().top;
 var element3 = $("#Computer").offset().top;
@@ -52,6 +52,44 @@ $(window).scroll(function() {
         document.getElementById("s7").style.display = "inline-block";
     }
 });
+   
+  $("#hideTrigger1").click(function(){
+        $("#hide1").toggle("fast");
+        $("#hideTrigger1").find("i").toggleClass("fa-chevron-down");
+    });
+
+    $("#hideTrigger2").click(function(){
+        $("#hide2").toggle("fast");
+         $("#hideTrigger2").find("i").toggleClass("fa-chevron-down");
+    });   
+    
+     $("#hideTrigger3").click(function(){
+        $("#hide3").toggle("fast");
+          $("#hideTrigger3").find("i").toggleClass("fa-chevron-down");
+    });    
+
+     $("#hideTrigger4").click(function(){
+        $("#hide4").toggle("fast");
+          $("#hideTrigger4").find("i").toggleClass("fa-chevron-down");
+    });    
+
+     $("#hideTrigger5").click(function(){
+        $("#hide5").toggle("fast");
+          $("#hideTrigger5").find("i").toggleClass("fa-chevron-down");
+    });    
+
+     $("#hideTrigger6").click(function(){
+        $("#hide6").toggle("fast");
+          $("#hideTrigger6").find("i").toggleClass("fa-chevron-down");
+    });  
+    
+      $("#hideTrigger7").click(function(){
+        $("#hide7").toggle("fast");
+           $("#hideTrigger7").find("i").toggleClass("fa-chevron-down");
+    });    
+
+});
+
 /* End Current Position */
 //$(document).ready(function() {
 //    $(".toggle-trigger").click(function() {
