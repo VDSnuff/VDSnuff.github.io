@@ -134,6 +134,11 @@ hr {
     text-align: center;
     margin-bottom: 3%;
 }
+
+.secLeft a {
+    color: white;
+}
+
 span.glyphicon.glyphicon-save {
     display: inline-block;
     font-size: 1.2em;
@@ -426,6 +431,11 @@ figure figcaption {
     list-style-type: disc;
     padding-left: 20%;
 }
+
+div.imgWall a:hover {
+    text-decoration: none;
+}
+
 #s1 {
     display: inline-block;
 }
