@@ -1,3 +1,9 @@
+/*
+!!!WARNING!!!
+It's my VERY FIRST experience with JavaScript.
+So, if you see this, please try to keep your eyeballs in safe place. They can start bleed, but it will pass in the nearest time...  
+*/
+
 /*Scroll*/
 $(document).ready(function($) {
     $(".scroll").click(function(event) {
@@ -7,6 +13,7 @@ $(document).ready(function($) {
         }, 1200);
     });
 });
+
 /* Current Position in menu */
 $(document).ready(function() {
 var element1 = $("#About").offset().top;
@@ -87,23 +94,4 @@ $(window).scroll(function() {
         $("#hide7").toggle("fast");
            $("#hideTrigger7").find("i").toggleClass("fa-chevron-down");
     });    
-
 });
-
-/* End Current Position */
-//$(document).ready(function() {
-//    $(".toggle-trigger").click(function() {
-//        $(this).parent().prevAll('.toggle-wrap').first().toggle('slow');
-//    });
-//});
-
-/*End Scroll*/
-
-/*Show Hide Func*/
-//
-//$(document).ready(function(){
-//    $("#a3").click(function(){
-//        $("#b3").toggle("fast");
-//    });
-//});
-/* End */
