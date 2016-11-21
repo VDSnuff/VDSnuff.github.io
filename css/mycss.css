@@ -1,3 +1,6 @@
+/*!!!HELLO!!!
+This kind of sh*t happens when you for the first start to do something and only then decide how it  must look like.*/
+
 body {
     /* Top nav bar fixed */
     /*End*/
@@ -12,8 +15,6 @@ body {
 a {
     cursor: pointer;
 }
-
-
 article {
     background: white;
 }
@@ -134,11 +135,9 @@ hr {
     text-align: center;
     margin-bottom: 3%;
 }
-
 .secLeft a {
     color: white;
 }
-
 span.glyphicon.glyphicon-save {
     display: inline-block;
     font-size: 1.2em;
@@ -253,6 +252,7 @@ div.contactInf p {
     padding-top: 0;
     text-indent: -5px;
 }
+
 .contactInform ul {
     text-align: left;
     list-style: none;
@@ -363,7 +363,6 @@ i {
     font-size: 30px;
     padding: 10px;
 }
-
 footer {
     display: block;
     text-align: center;
@@ -431,11 +430,9 @@ figure figcaption {
     list-style-type: disc;
     padding-left: 20%;
 }
-
 div.imgWall a:hover {
     text-decoration: none;
 }
-
 #s1 {
     display: inline-block;
 }
