@@ -1,0 +1,90 @@
+/*body {
+    font-family: ;
+    margin: 0;
+    padding: 0;
+    background-color: #3F4F5E;
+}
+h1 {
+    text-align: center;
+    margin-top: 10%;
+}
+div {
+    background-color: #FFFFFF;
+    height: 20%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-radius: 5px;
+}
+#getQuote {
+    display: inline;
+    float: right;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1%;
+}
+#postTwitter {
+    display: inline;
+    float: left;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1%;
+}
+#postTwitter img {
+    width: 20px;
+    height: 20px;
+}
+footer p {
+    text-align: center;
+    margin: 0;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 100%;
+}*/
+
+body {
+    color: #FFFFFF;
+    background-color: #669ACC;
+
+}
+h1 {
+    font-size: 6em;
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 10%;
+}
+img {
+    margin: 2%;
+    height: 150px;
+    width: 150px;
+}
+#postTwitter {
+    cursor: pointer;
+}
+.quoteContainer {
+    min-height: 150px;
+    font-size: 2em;
+    border-right-style: solid;
+    border-width: 6px;
+    padding-left: 20px;
+}
+#getQuote {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color: #669acc;
+    background-color: #FFFFFF;
+    font-size: 5em;
+    cursor: pointer;
+}
+
+#quote-title {
+    float: right;
+} 
