@@ -44,6 +44,9 @@ var responseQuote;
 var responseAuthor;
 
 function getQuote() {
+    var spinner = '<i id="mySpinner" class="fa fa-spinner fa-spin fa-3x fa-fw"></i><span class="sr-only">Loading...</span>';
+     $('#quote-content').html(spinner);
+        $('#quote-title').text(" ");
   $.ajax({
     headers: {
       "X-Mashape-Key": "2n5fJiMTdEmshqW92nSbpjJlnBijp1KT8McjsnFnBr26ikWBa6",
