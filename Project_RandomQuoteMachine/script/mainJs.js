@@ -45,26 +45,27 @@ var responseAuthor;
 
 function getQuote() {
     var spinner = '<i id="mySpinner" class="fa fa-spinner fa-spin fa-3x fa-fw"></i><span class="sr-only">Loading...</span>';
-     $('#quote-content').html(spinner);
-        $('#quote-title').text(" ");
-  $.ajax({
-    headers: {
-      "X-Mashape-Key": "2n5fJiMTdEmshqW92nSbpjJlnBijp1KT8McjsnFnBr26ikWBa6",
-      "Content-Type": "application/x-www-form-urlencoded",
-       Accept: "application/json"
-    },
-    url: 'https://andruxnet-random-famous-quotes.p.mashape.com/cat=',
-    success: function(response) {
-      var resp = JSON.parse(response);
-      responseQuote = '<em>"' + resp.quote + '"</em>';
-      responseAuthor = ' - ' + resp.author;
-        
-        $('#quote-content').html(responseQuote);
+    $('#quote-content').html(spinner);
+    $('#quote-title').text(" ");
+    $.ajax({
+        headers: {
+            "X-Mashape-Key": "2n5fJiMTdEmshqW92nSbpjJlnBijp1KT8McjsnFnBr26ikWBa6",
+            "Content-Type": "application/x-www-form-urlencoded",
+            Accept: "application/json"
+        },
+        url: 'https://andruxnet-random-famous-quotes.p.mashape.com/cat=',
+        success: function(response) {
+            var resp = JSON.parse(response);
+            responseQuote = '<em>"' + resp.quote + '"</em>';
+            responseAuthor = ' - ' + resp.author;
+
+            $('#quote-content').html(responseQuote);
             $('#quote-title').text(responseAuthor);
-        
-    }});
+
+        }
+    });
 }
-    
+
 function postTwitter() {
     var plainText = responseQuote.slice(4, responseQuote.length - 5);
     if (plainText.length + responseAuthor.length > 140) {
@@ -80,5 +81,5 @@ $(document).ready(function() {
     $('#getQuote').on('click', getQuote);
     $('#postTwitter').on('click', postTwitter);
 });
-    
+
 //End

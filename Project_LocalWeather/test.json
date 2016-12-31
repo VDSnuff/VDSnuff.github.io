@@ -1,0 +1,152 @@
+{
+    "query": {
+        "count": 1,
+        "created": "2016-12-26T00:34:49Z",
+        "lang": "en-US",
+        "results": {
+            "channel": {
+                "units": {
+                    "distance": "km",
+                    "pressure": "mb",
+                    "speed": "km/h",
+                    "temperature": "C"
+                },
+                "title": "Yahoo! Weather - Bydgoszcz, Kuiavia-Pomerania, PL",
+                "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-12866517/",
+                "description": "Yahoo! Weather for Bydgoszcz, Kuiavia-Pomerania, PL",
+                "language": "en-us",
+                "lastBuildDate": "Mon, 26 Dec 2016 01:34 AM CET",
+                "ttl": "60",
+                "location": {
+                    "city": "Bydgoszcz",
+                    "country": "Poland",
+                    "region": " Kuiavia-Pomerania"
+                },
+                "wind": {
+                    "chill": "45",
+                    "direction": "270",
+                    "speed": "28.97"
+                },
+                "atmosphere": {
+                    "humidity": "89",
+                    "pressure": "34033.22",
+                    "rising": "0",
+                    "visibility": "25.75"
+                },
+                "astronomy": {
+                    "sunrise": "8:2 am",
+                    "sunset": "3:37 pm"
+                },
+                "image": {
+                    "title": "Yahoo! Weather",
+                    "width": "142",
+                    "height": "18",
+                    "link": "http://weather.yahoo.com",
+                    "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
+                },
+                "item": {
+                    "title": "Conditions for Bydgoszcz, Kuiavia-Pomerania, PL at 12:00 AM CET",
+                    "lat": "53.12986",
+                    "long": "18.037741",
+                    "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-12866517/",
+                    "pubDate": "Mon, 26 Dec 2016 12:00 AM CET",
+                    "condition": {
+                        "code": "26",
+                        "date": "Mon, 26 Dec 2016 12:00 AM CET",
+                        "temp": "9",
+                        "text": "Cloudy"
+                    },
+                    "forecast": [{
+                        "code": "11",
+                        "date": "26 Dec 2016",
+                        "day": "Mon",
+                        "high": "10",
+                        "low": "3",
+                        "text": "Showers"
+                    }, {
+                        "code": "23",
+                        "date": "27 Dec 2016",
+                        "day": "Tue",
+                        "high": "5",
+                        "low": "2",
+                        "text": "Breezy"
+                    }, {
+                        "code": "32",
+                        "date": "28 Dec 2016",
+                        "day": "Wed",
+                        "high": "2",
+                        "low": "-2",
+                        "text": "Sunny"
+                    }, {
+                        "code": "30",
+                        "date": "29 Dec 2016",
+                        "day": "Thu",
+                        "high": "1",
+                        "low": "-5",
+                        "text": "Partly Cloudy"
+                    }, {
+                        "code": "30",
+                        "date": "30 Dec 2016",
+                        "day": "Fri",
+                        "high": "1",
+                        "low": "-2",
+                        "text": "Partly Cloudy"
+                    }, {
+                        "code": "28",
+                        "date": "31 Dec 2016",
+                        "day": "Sat",
+                        "high": "1",
+                        "low": "-2",
+                        "text": "Mostly Cloudy"
+                    }, {
+                        "code": "28",
+                        "date": "01 Jan 2017",
+                        "day": "Sun",
+                        "high": "1",
+                        "low": "0",
+                        "text": "Mostly Cloudy"
+                    }, {
+                        "code": "28",
+                        "date": "02 Jan 2017",
+                        "day": "Mon",
+                        "high": "2",
+                        "low": "0",
+                        "text": "Mostly Cloudy"
+                    }, {
+                        "code": "28",
+                        "date": "03 Jan 2017",
+                        "day": "Tue",
+                        "high": "1",
+                        "low": "-1",
+                        "text": "Mostly Cloudy"
+                    }, {
+                        "code": "23",
+                        "date": "04 Jan 2017",
+                        "day": "Wed",
+                        "high": "0",
+                        "low": "-1",
+                        "text": "Breezy"
+                    }],
+                    "description": "\n
+\nCurrent Conditions:\n
+Cloudy\n
+\n
+\nForecast:\n
+Mon - Showers. High: 10Low: 3\n
+Tue - Breezy. High: 5Low: 2\n
+Wed - Sunny. High: 2Low: -2\n
+Thu - Partly Cloudy. High: 1Low: -5\n
+Fri - Partly Cloudy. High: 1Low: -2\n
+\n
+\nFull Forecast at Yahoo! Weather\n
+\n
+\n(provided by The Weather Channel)\n
+\n]]>",
+                    "guid": {
+                        "isPermaLink": "false"
+                    }
+                }
+            }
+        }
+    }
+}
