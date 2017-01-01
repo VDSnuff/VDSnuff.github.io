@@ -1,36 +1,16 @@
 var currentLatitude;
 var currentLongitude;
+var weatherURL;
 
-var geoLocation = function() {
-
-    var spinner = '<i id="mySpinner" class="fa fa-spinner fa-spin fa-3x fa-fw"></i><span class="sr-only">Loading...</span>';
-    $('#mainContainer').html(spinner);
-
-    var defer = $.Deferred();
-    //Get Latitude and longitude
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function(position) {
-            currentLatitude = position.coords.latitude;
-            currentLongitude = position.coords.longitude;
-        });
-    }
-    setTimeout(function() {
-        defer.resolve();
-    }, 2000);
-
-    return defer;
-};
 
 var getWeater = function() {
-    var defer = $.Deferred();
-
     $.ajax({
         headers: {
             "X-Mashape-Key": "fJ2lAj6zWDmshtWgy3eeZxqS37vpp1HxRCSjsnxUyd8gIhvHMw",
             "Content-Type": "application/x-www-form-urlencoded",
             Accept: "application/json"
         },
-        url: 'https://simple-weather.p.mashape.com/weatherdata?lat=' + currentLatitude + '&lng=' + currentLongitude,
+        url: weather,
         success: function(response) {
             var resp = JSON.parse(response);
             //Location
@@ -73,15 +53,20 @@ var getWeater = function() {
             //Forecast End
         }
     });
-
-    setTimeout(function() {
-        defer.resolve(); // When this fires, the code in a().then(/..../); is executed.
-    }, 1000);
-
-    return defer;
 };
 $(document).ready(function() {
-    geoLocation().then(getWeater);
+    
+    var spinner = '<i id="mySpinner" class="fa fa-spinner fa-spin fa-3x fa-fw"></i><span class="sr-only">Loading...</span>';
+    $('#mainContainer').html(spinner);
+  
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            currentLatitude = position.coords.latitude;
+            currentLongitude = position.coords.longitude;
+            weather = 'https://simple-weather.p.mashape.com/weatherdata?lat=' + currentLatitude + '&lng=' + currentLongitude;
+             getWeater();
+        });
+    }
     // $('#test').on('click', getWeater);
     //$('#postTwitter').on('click', postTwitter);
 });
