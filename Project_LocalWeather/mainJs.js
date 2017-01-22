@@ -1,7 +1,27 @@
 var currentLatitude;
 var currentLongitude;
 var weatherURL;
+var whetherIconType;
 
+function setWhetherIcon(){
+  /*  switch(expression) {
+    case n:
+        code block
+        break;
+    case n:
+        code block
+        break;
+    default:
+        default code block
+}*/
+    //return whetherIconType = ...;
+}
+
+// Make something like temperature converter based on response parameters(vise-versa)!!!
+function convertToF(celsius) {
+  var fahrenheit = celsius*(9/5) + 32;
+  return fahrenheit;
+}
 
 var getWeater = function() {
     $.ajax({
@@ -13,27 +33,36 @@ var getWeater = function() {
         url: weather,
         success: function(response) {
             var resp = JSON.parse(response);
+            //Main Container
+            //Arrow left
+             $('#mainContainer').html('<div class="col-xs-1 col-sm-1 col-md-2 col-lg-2">' + '<img id="arrowLeft" src="weatherPack/left-chevron.svg" alt="<<ArrowLeft">' +'</div>');
+            //End
+            
             //Location
-            $('#mainContainer').html('<div >' + resp['query']['results']['channel']['location']['city'] + '</div>');
-            $('#mainContainer').append('<p>' + resp['query']['results']['channel']['location']['region'] + '</p>');
-            $('#mainContainer').append('<p>' + resp['query']['results']['channel']['lastBuildDate'] + '</p>');
-            $('#mainContainer').append('<p>' + resp['query']['results']['channel']['location']['country'] + '</p>');
+            $('#mainContainer').append('<div id="internalContainer" class="col-xs-10 col-sm-10 col-md-8 col-lg-8">' + '<p>' + resp['query']['results']['channel']['location']['city'] + '</p>' + '</div>');
+            //$('#mainContainer').append('<p>' + resp['query']['results']['channel']['location']['region'] + '</p>');
+            $('#internalContainer').append('<p>' + resp['query']['results']['channel']['lastBuildDate'] + '</p>');
+            $('#internalContainer').append('<p>' + resp['query']['results']['channel']['location']['country'] + '</p>');
             //End Location
-
+            $("#internalContainer").append('<img src="weatherPack/sunny.svg" height="100">');
             //Wind
-            $('#mainContainer').append('<p>' + resp['query']['results']['channel']['wind']['speed'] + '</p>');
+            $('#internalContainer').append('<p>' + resp['query']['results']['channel']['wind']['speed'] + '</p>');
             //End Wind
 
             //Atmosphere
-            $('#mainContainer').append('<p>' + resp['query']['results']['channel']['atmosphere']['humidity'] + '</p>');
-            $('#mainContainer').append('<p>' + resp['query']['results']['channel']['atmosphere']['pressure'] + '</p>');
-            $('#mainContainer').append('<p>' + resp['query']['results']['channel']['atmosphere']['visibility'] + '</p>');
+            $('#internalContainer').append('<p>' + resp['query']['results']['channel']['atmosphere']['humidity'] + '</p>');
+            $('#internalContainer').append('<p>' + resp['query']['results']['channel']['atmosphere']['pressure'] + '</p>');
+            $('#internalContainer').append('<p>' + resp['query']['results']['channel']['atmosphere']['visibility'] + '</p>');
             //End Atmosphere
 
-            //Astronomy
-            $('#mainContainer').append('<p>' + resp['query']['results']['channel']['item']['condition']['temp'] + '</p>');
-            //End astronomy
-
+            //Temp
+            $('#internalContainer').append('<p>' + resp['query']['results']['channel']['item']['condition']['temp'] + '</p>');
+            //End temp
+            //Arrow right
+            $('#mainContainer').append('<div class="col-xs-1 col-sm-1 col-md-2 col-lg-2">' + '<img id="arrowRight" src="weatherPack/right-chevron.svg" alt="ArrowRight>>">' +'</div>');
+            //End Arrow
+            //End Main Container
+            
             //Forecast 
             //Row One
             for (var i = 0; i < 4; i++) {
@@ -55,18 +84,22 @@ var getWeater = function() {
     });
 };
 $(document).ready(function() {
-    
+    //Spiner
     var spinner = '<i id="mySpinner" class="fa fa-spinner fa-spin fa-3x fa-fw"></i><span class="sr-only">Loading...</span>';
     $('#mainContainer').html(spinner);
-  
+    //End spiner
+    
+    //Get current location + Initiate getWeather request
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
             currentLatitude = position.coords.latitude;
             currentLongitude = position.coords.longitude;
             weather = 'https://simple-weather.p.mashape.com/weatherdata?lat=' + currentLatitude + '&lng=' + currentLongitude;
-             getWeater();
+            getWeater();
         });
     }
+    //End
+    
     // $('#test').on('click', getWeater);
     //$('#postTwitter').on('click', postTwitter);
 });
