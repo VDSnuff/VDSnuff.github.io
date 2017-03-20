@@ -201,7 +201,8 @@ ul.skills ul li:last-child {
 }
 .imgWall img {
     margin: 2%;
-    height: auto;
+    height:90px;
+    width:auto;
     opacity: 0.8;
 }
 .imgWall img:hover {
